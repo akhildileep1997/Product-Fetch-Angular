@@ -1,0 +1,26 @@
+.main{
+    margin-left:350px;
+}
+li{
+    padding: 15px 45px;
+}
+li a{
+    color: rgb(248, 244, 244);
+    font-size: 20px;
+}
+h3{
+    color: white;
+}
+.nav{
+    background-image: linear-gradient(to right, #000000c0,#090947,#000000b7);
+}
+img{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 50%;
+    margin-left: 25px;
+}
+.title{
+    margin-left: 0px;
+}

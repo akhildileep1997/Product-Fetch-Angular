@@ -1,0 +1,32 @@
+<body>
+<div class="container">
+    <h1 class="text-center mt-5">PRODUCTS</h1>
+    <div class="row my-5">
+        <div class="col">
+            <input (keyup)="filter($event)"  type="text" placeholder="Search" >  <i class="fa-solid fa-magnifying-glass ms-2"></i>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row my-5 text-center">
+
+        <div class="col-4 my-5 " *ngFor="let product of allProduct |search:searchKey:'title'">
+            <div class="card text-center shadow" style="width: 18rem; height: 470px; border-radius: 30px; ">
+                <div class="my-1 mx-2"><img [src]="product.images[0]" class="card-img-top" alt="..."></div>
+                <div class="card-body">
+                    <h4>{{product.brand}}</h4>
+                    <h5>{{product.title}} </h5>
+                    <h6>Price : {{ product.price}}</h6>
+                    <p>Rating : {{product.rating}} </p>
+                </div>
+                <div class="my-3"><button routerLink="/productHome/allProduct/viewProduct/{{product.id}}">View Details</button></div>
+
+              </div>
+        </div>
+
+        
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+    </div>
+</div>
+</body>

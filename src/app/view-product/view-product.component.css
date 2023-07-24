@@ -1,0 +1,16 @@
+img{
+    border-radius: 50px;
+    margin-top: 80px;
+    object-fit: contain;
+}
+span{
+    color: blue;
+    font-size: 20px;
+}
+li{
+    color: gray;
+    font-weight: bolder;
+}
+body{
+    background-color: aliceblue;
+}
